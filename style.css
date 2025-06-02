@@ -128,6 +128,49 @@ h2 {
   text-align: center;
 }
 
+.about-section {
+  background-color: #1d2a35;
+  padding: 60px 20px;
+  color: white;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.skills-icons img {
+  width: 40px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
 /* Projects Grid */
 .projects-grid {
   display: grid;
