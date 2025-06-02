@@ -1,67 +1,79 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Data Analyst</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Reza Agam</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">Reza Agam</h1>
-            <ul class="nav-links">
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#projects">Proyek</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-        </div>
-    </nav>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">Reza Agam</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+  </nav>
 
-    <header class="hero">
-        <div class="container">
-            <h2>Halo, saya <span>Nama Kamu</span></h2>
-            <p>Data Analyst | Lulusan Teknik Informatika</p>
-        </div>
-    </header>
+  <header class="hero">
+    <div class="container">
+      <h1>Halo, saya <span>Reza Agam</span></h1>
+      <p>Data Analyst & Web Developer yang suka membuat solusi kreatif.</p>
+      <a href="#projects" class="btn-primary">Lihat Proyek Saya</a>
+    </div>
+  </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>Tentang Saya</h2>
-            <p>Saya memiliki latar belakang di bidang teknik informatika dan sedang fokus membangun karier sebagai data analyst. Saya memiliki pengalaman dalam SQL, Python, dan Power BI.</p>
-        </div>
-    </section>
+  <section id="about" class="section about">
+    <div class="container bg-light">
+      <h2>Tentang Saya</h2>
+      <p>Saya adalah lulusan Teknik Informatika yang bersemangat dalam bidang data analysis dan pengembangan web. Saya mahir menggunakan Python, SQL, dan tools analisis data lainnya untuk membantu bisnis mengambil keputusan berbasis data.</p>
+    </div>
+  </section>
 
-    <section id="projects" class="section bg-light">
-        <div class="container">
-            <h2>Proyek</h2>
-            <div class="project">
-                <h3>Pizza Sales Dashboard</h3>
-                <p>Menganalisis penjualan pizza menggunakan SQL dan Tableau untuk melihat tren dan performa penjualan.</p>
-                <a href="#">Lihat Proyek</a>
-            </div>
-            <div class="project">
-                <h3>Heart Disease Classification</h3>
-                <p>Model klasifikasi penyakit jantung menggunakan Python (XGBoost dan Random Forest).</p>
-                <a href="#">Lihat Proyek</a>
-            </div>
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Proyek Saya</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Dashboard Penjualan E-Commerce</h3>
+          <p>Membuat dashboard interaktif untuk analisis penjualan menggunakan Power BI dan Python.</p>
+          <a href="https://github.com/rezaaagam/ecommerce-dashboard" target="_blank" rel="noopener">Lihat di GitHub</a>
         </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Kontak</h2>
-            <ul>
-                <li>Email: kamu@email.com</li>
-                <li>LinkedIn: <a href="#">linkedin.com/in/namakamu</a></li>
-                <li>WhatsApp: 08xx-xxxx-xxxx</li>
-            </ul>
+        <div class="project-card">
+          <h3>Aplikasi Analisis Data</h3>
+          <p>Aplikasi berbasis web untuk menganalisis dataset besar dan visualisasi data.</p>
+          <a href="https://github.com/rezaaagam/data-analysis-app" target="_blank" rel="noopener">Lihat di GitHub</a>
         </div>
-    </section>
+        <!-- Tambah proyek lain di sini -->
+      </div>
+    </div>
+  </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Nama Kamu</p>
-    </footer>
+  <section id="contact" class="section contact">
+    <div class="container bg-light">
+      <h2>Kontak</h2>
+      <p>Email: <a href="mailto:rezaaagam@example.com">rezaaagam@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/rezaaagam" target="_blank" rel="noopener">linkedin.com/in/rezaaagam</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Reza Agam. Semua hak cipta dilindungi.</p>
+  </footer>
+
+  <script>
+    // Toggle Hamburger Menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
